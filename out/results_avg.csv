@@ -1,0 +1,11 @@
+version,avg_time_ms
+Czysty Python,1941.2540000000001
+Numpy Python,71.924
+Czysty Python MT,1121.516
+Numpy Python MT,51.602999999999994
+Czysty C++,65.97188
+Czysty C++ MT,18.62689
+SIMD C++,14.03765
+SIMD (AVX2) MT,6.251811
+SIMD FMA,16.65521
+SIMD (AVX2) + FMA MT,6.278685
