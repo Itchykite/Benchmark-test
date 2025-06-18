@@ -1,6 +1,6 @@
 # Benchmark-test
 
-## Benchmark for simple funkction
+## Benchmark for simple function
 - cpp
 - cpp_mt
 - simd
