@@ -1,3 +1,6 @@
+import matplotlib as mpl
+mpl.use('TkAgg')
+
 import csv
 import matplotlib.pyplot as plt
 

@@ -1,11 +1,11 @@
 version,time_ms
-Czysty Python,1850.26
-Numpy Python,67.02
-Czysty Python MT,1170.05
-Numpy Python MT,51.38
-Czysty C++,99.1498
-Czysty C++ MT,17.0616
-SIMD C++,14.2671
-SIMD (AVX2) MT,6.49217
-SIMD FMA,13.1686
-SIMD (AVX2) + FMA MT,5.95331
+Czysty Python,1913.64
+Numpy Python,31.75
+Czysty Python MT,1252.39
+Numpy Python MT,25.99
+Czysty C++,39.5288
+Czysty C++ MT,6.37814
+SIMD C++,4.36463
+SIMD (AVX2) MT,3.44486
+SIMD FMA,4.43055
+SIMD (AVX2) + FMA MT,3.07933
