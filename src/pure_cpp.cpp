@@ -3,7 +3,8 @@
 #include <cmath>
 #include <chrono>
 
-int main() {
+int main() 
+{
     const size_t N = 10'000'000;
     std::vector<float> a(N, 1.0f), b(N, 2.0f), c(N);
 
