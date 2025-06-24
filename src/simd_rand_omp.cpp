@@ -5,11 +5,14 @@
 #include <fstream>
 #include <random>
 #include <omp.h>
+#include <chrono>
 
 int main()
 {
     const int N = 10'000'000;
     std::vector<float> a(N), b(N), c(N);
+
+    auto start = std::chrono::high_resolution_clock::now();
 
     #pragma omp parallel
     {
@@ -36,6 +39,11 @@ int main()
     for (size_t i = (N / 8) * 8; i < N; ++i)
         c[i] = std::sqrt(a[i] + b[i]);
 
+
+    auto end = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double, std::milli> dur = end - start;
+    std::cout << "SIMD (AVX2) OMP RAND," << dur.count() << std::endl;
 
     std::ofstream out("result.txt");
     if (!out) 

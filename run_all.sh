@@ -35,6 +35,7 @@ echo "🚀 SIMD..."
 "$BUILD_DIR/simd_mt" >> "$OUT_DIR/results.csv"
 "$BUILD_DIR/simd_fma" >> "$OUT_DIR/results.csv"
 "$BUILD_DIR/simd_fma_mt" >> "$OUT_DIR/results.csv"
+"$BUILD_DIR/simd_rand_omp" >> "$OUT_DIR/results.csv"
 
 echo ""
 
