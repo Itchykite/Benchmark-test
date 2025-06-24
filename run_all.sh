@@ -16,6 +16,7 @@ g++ -O3 -std=c++17 -mavx2 "$SRC_DIR/simd_cpp.cpp" -o "$BUILD_DIR/simd"
 g++ -O3 -std=c++17 -mavx2 "$SRC_DIR/simd_cpp_mt.cpp" -pthread -o "$BUILD_DIR/simd_mt"
 g++ -O3 -std=c++17 -mavx2 -mfma "$SRC_DIR/simd_cpp_fma.cpp" -o "$BUILD_DIR/simd_fma"
 g++ -O3 -std=c++17 -mavx2 -mfma "$SRC_DIR/simd_cpp_fma_mt.cpp" -pthread -o "$BUILD_DIR/simd_fma_mt"
+g++ -O3 -std=c++17 -mavx2 -mfma -fopenmp "$SRC_DIR/simd_rand_omp.cpp" -o "$BUILD_DIR/simd_rand_omp"
 
 echo "version,time_ms" > "$OUT_DIR/results.csv"
 
